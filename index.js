@@ -24,7 +24,7 @@ class SassPlugin extends Plugin {
 
   config() {
     return {
-      intermediateOutputPath: this.isForAddon() ? 'addon.scss' : 'app/styles/app.scss',
+      intermediateOutputPath: this.isForAddon() ? 'addon.scss' : 'src/ui/styles/app.scss',
       extension: 'scss',
       postcssOptions: {
         syntax: require('postcss-scss')
